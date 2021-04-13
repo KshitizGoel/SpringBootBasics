@@ -13,29 +13,23 @@ import java.util.List;
 @RestController
 public class DemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
 
-	@GetMapping
-	 public List<Student> studentDetails(){
-		return  List.of(
-				new Student(
-						"Kshitiz Goel",
-						5L,
-						21,
-						 LocalDate.of(2000, 12, 10),
-						"kshitizgoel11@gmail.com"
-				),
-				new Student(
-						"Mayank Mittal",
-						6L,
-						20,
-						LocalDate.of(2001, 6, 8),
-						"mayamusk@gmail.com"
-				)
-		);
-	 }
+    @GetMapping
+    public List<Student> studentDetails() {
+        return List.of(
+                new Student(
+                        "Kshitiz Goel",
+                        5L,
+                        21,
+                        LocalDate.of(2000, 12, 10),
+                        "kshitizgoel11@gmail.com"
+                )
+
+        );
+    }
 
 
 }
