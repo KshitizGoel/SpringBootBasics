@@ -7,7 +7,7 @@ import java.util.List;
 
 @Component
 public class StudentService {
-
+    //Hardcoding the data for now until we connect to the real database....
     public List<Student> getStudents() {
         return List.of(
                 new Student(

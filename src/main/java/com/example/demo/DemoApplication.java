@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.skill_sets.Skills;
 import com.example.demo.student.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,6 +31,4 @@ public class DemoApplication {
 
         );
     }
-
-
 }

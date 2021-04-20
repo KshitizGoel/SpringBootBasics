@@ -12,6 +12,8 @@ public class Student {
     public Student() {
     }
 
+
+    //A constructor without the id.
     public Student(String name, Integer age, LocalDate dob, String email) {
         this.name = name;
         this.age = age;
@@ -19,6 +21,8 @@ public class Student {
         this.email = email;
     }
 
+
+    //This is how the basic structure of the API will be.
     @Override
     public String toString() {
         return "Student{" +
@@ -30,6 +34,8 @@ public class Student {
                 '}';
     }
 
+
+    //Using Command + N to generate the getters and Setters and the constructors
     public String getName() {
         return name;
     }
